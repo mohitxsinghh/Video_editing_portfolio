@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="portfolio">
+        <div class="container">
+            <h1>Our Video Editing Work</h1>
+            <div class="row">
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/fHNR3ZHDXug?si=pVpg_iRoNGJjDN4_')">
+                    <h3>Short-form Videos</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/Ta4nyuMvqok?si=VI-Zq3or6gb2djIT')">
+                    <h3>Long-form Videos</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/hhhSRaTP_mI?si=5U9kuooKmS5fWRPJ')">
+                    <h3>Gaming Videos</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/G4RJDl-Izfs?si=ops9T4JIsD1b1KKl')">
+                    <h3>Football Edits</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/uKtGNJLImUw?si=rO0Pp0XPDGO14Smt')">
+                    <h3>eCommerce Ads</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube//embed/XgiFrw9sDXU?si=yCrtuHGe092QtYT6')">
+                    <h3>Documentary Style</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/goKa-A5cfig?si=uOo2Mlq9UhVSx4KC')">
+                    <h3>Color Grading</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/C4j8D83ugt0?si=Ydg-vfSwTn-6xAiX')">
+                    <h3>Anime Videos</h3>
+                </div>
+                <div class="column" onclick="changeVideo('https://youtube.com/embed/bW7wUdp50Z8?si=8JhiBs8PTUlbUK1K')">
+                    <h3>Ads</h3>
+                </div>
+            </div>
+    
+            <div class="video-container">
+                <h2>Featured Video</h2>
+                <iframe id="video-frame" src="https://youtube.com/embed/fHNR3ZHDXug?si=pVpg_iRoNGJjDN4_" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <script>
+            function changeVideo(videoUrl) {
+                document.getElementById('video-frame').src = videoUrl;
+            }
+        </script>
+    </div>
+</body>
+</html>
